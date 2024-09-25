@@ -54,15 +54,15 @@
     </div>
      <script>
         document.addEventListener("DOMContentLoaded", function() {
-            var baseUrl = [
+            const baseUrl = [
         			'https://wa.me/919818580283',
         			'https://wa.me/919711098248',
         			'https://wa.me/918505915389',
         			'https://wa.me/919711280858',
         		     ]; 
-            var currentParams = window.location.search;
-            var finalUrl = baseUrl + currentParams;
-            document.getElementById("popup-link").setAttribute("href", finalUrl);
+            // var currentParams = window.location.search;
+            // var finalUrl = baseUrl + currentParams;
+            document.getElementById("popup-link").setAttribute("href", baseUrl);
         });
     </script>
 
