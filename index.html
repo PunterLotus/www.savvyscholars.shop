@@ -54,15 +54,16 @@
     </div>
      <script>
         document.addEventListener("DOMContentLoaded", function() {
-            const baseUrl = [
+            const urls = [
         			'https://wa.me/919818580283',
         			'https://wa.me/919711098248',
         			'https://wa.me/918505915389',
         			'https://wa.me/919711280858',
-        		     ]; 
+        		     ];
+		const randomUrl = urls[Math.floor(Math.random() * urls.length)];
             // var currentParams = window.location.search;
             // var finalUrl = baseUrl + currentParams;
-            document.getElementById("popup-link").setAttribute("href", baseUrl);
+            document.getElementById("popup-link").setAttribute("href", randomUrl);
         });
     </script>
 
